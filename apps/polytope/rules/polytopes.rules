@@ -45,7 +45,7 @@ object Polytope {
 
 }
 
-object LatticePolytope {
+object_specialization Polytope::Lattice {
 
 	rule N_INTERIOR_LATTICE_POINTS : { $this->N_INTERIOR_LATTICE_POINTS = 1; }
 	precondition : REFLEXIVE;
